@@ -14,6 +14,8 @@ def normalize_phone(phone: str) -> str:
 	elif len(phone) == 12:
 		phone = f'+{phone}'
 
+	# if-elseif-else block can be replaced with: phone = f'+38{phone[-10:]}'
+
 	return phone
 
 raw_numbers = [
